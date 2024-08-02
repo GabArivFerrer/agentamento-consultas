@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template - Utilizar como modelo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="'stylesheet" href="base.css">
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="menu">
+            <!-- Menu -->
+            <ul>
+                <li><a href="index.html">Página inicial</a></li>
+                <li><a href="about.html">Sobre</a></li>
+                <li><a href="horario.html">Horário de atendimento</a></li>
+                <li><a href="contato.html">Fale conosco</a></li>
+                <li><a href="cadastro.html">Agende a sua consulta</a></li>
+            </ul>
+        </nav>
+
+        <main class="main">
+            <header class="header">
+                <img width="100%" src="https://www.proctoprime.com.br/uploads/img/slide/5/thumb-600-0/3c44c05030a2b374e1a7495d5a4701c5.jpg" alt="Imagem de cabeçalho">
+            </header>
+    
+            <!-- Conteúdo -->
+            <section class="content">            
+                <h1>Cadastro de consultas</h1>
+                <form name="cadastro de consultas" method="post" autocomplete="on" action="https://www.google.com" onsubmit="alert('Consulta marcada com sucesso!');"> 
+                    <fieldset> 
+                        <legend>Dados Pessoais</legend>
+                        <div class="row"> 
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="row">
+                            <label for="cpf">CPF</label>
+                            <input type="number" id="cpf" name="cpf" required>
+                        </div> 
+                        <div class="row"> 
+                            <label for="phone">Telefone</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="row"> 
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>  
+                    </fieldset>
+
+                    <fieldset> 
+                        <legend>Endereço</legend>
+                        <div class="row"> 
+                            <label for="country">País</label>
+                            <input type="text" id="country" name="country" required>
+                        </div>
+                        <div class="row">
+                            <label for="state">Estado</label>
+                            <input type="text" id="state" name="state" required>
+                        </div>
+                        <div class="row">
+                            <label for="cep">CEP</label>
+                            <input type="text" id="cep" name="cep" required>
+                        </div>
+                        <div class="row">
+                            <label for="street">Rua</label>
+                            <input type="text" id="street" name="street" required>
+                        </div>
+                        <div class="row">
+                            <label for="district">Bairro</label>
+                            <input type="text" id="district" name="district" required>
+                        </div>
+                        <div class="row">
+                            <label for="complement">Complemento</label>
+                            <input type="text" id="complement" name="complement">
+                        </div>
+                    </fieldset>
+
+                    <fieldset> 
+                        <legend>Agende a sua consulta</legend>
+                        <div class="row"> 
+                            <label for="especialidade">Especialidade:</label>
+                            <select id="especialidade" name="especialidade" required> 
+                                <option value="">Selecione a especialidade</option>
+                                <option value="Raio-X">Raio-X</option>
+                                <option value="Ultrassom">Ultrassom</option>
+                                <option value="Ultrassom com Dopler">Ultrassom com Dopler</option>
+                                <option value="Tomografia">Tomografia</option>
+                                <option value="Ressonância">Ressonância</option>
+                                <option value="Exames cardiológicos">Exames cardiológicos</option>
+                                <option value="Endoscopia">Endoscopia</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <label for="unidade">Unidade:</label> 
+                            <select id="unidade" name="unidade" required>
+                                <option value="">Selecione a unidade</option>
+                                <option value="Derby">Derby</option>
+                                <option value="Boa Viagem">Boa Viagem</option>
+                                <option value="Olinda">Olinda</option>
+                                <option value="Casa Forte">Casa Forte</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <label for="convenio">Convênio:</label>
+                            <select id="convenio" name="convenio" required>
+                                <option value="">Selecione o convênio</option>
+                                <option value="unimed">Unimed</option>
+                                <option value="Amil">Amil</option>
+                                <option value="Petrobras">Petrobras</option>
+                                <option value="Amil">Amil</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <label for="date">Data:</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="row"> 
+                            <label for="horario">Horário:</label>
+                            <select id="horario" name="horario" required>
+                                <option value="">Selecione o horário</option>
+                                <option value="07:00">07:00</option>
+                                <option value="08:00">08:00</option>
+                                <option value="09:00">09:00</option>
+                                <option value="10:00">10:00</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <label for="file">Requisição médica:</label>
+                            <input type="file" id="file" name="file" multiple>
+                        </div>
+                    </fieldset>
+                    <div class="row"> 
+                        <button type="submit">Enviar</button> 
+                        <button type="reset">Limpar tudo</button>
+                    </div>
+                </form>
+            </section>
+            <footer class="footer">
+                <!-- Rodapé -->
+                <ul>
+                    <li><a href="index.html">Página inicial</a></li>
+                    <li><a href="about.html">Sobre</a></li>
+                    <li><a href="horario.html">Horário de atendimento</a></li>
+                    <li><a href="contato.html">Fale conosco</a></li>
+                    <li><a href="cadastro.html">Agende a sua consulta</a></li>
+                </ul>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>

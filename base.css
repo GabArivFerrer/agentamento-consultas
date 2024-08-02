@@ -1,0 +1,90 @@
+html, body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #e9f5f9;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.menu {
+    width: 15%;
+    background-color: #00316c;
+    color: #ffffff;
+    padding: 20px;
+    box-shadow: 2px 0 4px rgba(0,0,0,0.1);
+}
+
+.header {
+    background-color: #ffffff;
+    min-height: 150px;
+    width: 100%;
+}
+
+.content, .exames, .casa {
+    background-color: #f5fdfd;
+    min-height: 150px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.footer {
+    background-color: #00316c;
+    color: #ffffff;
+    min-height: 100px;
+    padding: 20px;
+}
+
+a:link, a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.row { 
+    margin: 10px 0;
+}
+
+label { 
+    width: 150px;
+    text-align: right;
+    display: inline-block;
+    padding-right: 10px;
+    color: #00316c;
+}
+
+fieldset {
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #00316c;
+    padding: 15px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    border-bottom: 4px solid #00316c;
+}
+
+.unidades, .endereços {
+    background-color: #00316c;
+    color: #ffffff;
+    min-height: 150px;
+    padding: 20px;
+    border-radius: 8px;
+}
